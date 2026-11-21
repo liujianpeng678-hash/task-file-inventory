@@ -1,0 +1,6 @@
+interface:
+  display_name: "垃圾桶skill"
+  short_description: "平时只登记；清扫时从正式结果反查原始材料和依赖，集中处理已核实无用过程文件"
+  default_prompt: "使用 $trash-bin：平时只登记并保留原位；清扫项目过程材料时，从当前正式结果反查原始材料、必要依赖和来源证据，再核实其余文件用途，将已确认弃用项集中清理。沿用现有授权；永久删除须有明确授权，未知及在用项保留。核对正式结果与实际空间，报告未完成范围。"
+policy:
+  allow_implicit_invocation: true

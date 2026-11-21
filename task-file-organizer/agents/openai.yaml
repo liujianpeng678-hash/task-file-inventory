@@ -1,0 +1,6 @@
+interface:
+  display_name: "整理 Skill"
+  short_description: "任务收尾时归位本轮成果和工作文件，保护引用与依赖，弃用文件仅标记"
+  default_prompt: "使用 $task-file-organizer 整理本轮生成的文件，保留有效引用与依赖，并核验交付路径。"
+policy:
+  allow_implicit_invocation: true

@@ -7,9 +7,19 @@
 - **标记待核**：证据不足时如实标明。
 - **清理过程文件**：整理完成后，获得授权即可清理本次任务生成且已确认无用的过程文件。
 
-## 使用方法
+## 安装和使用
 
-在支持 Skill 的助手中，把 [SKILL.md](./SKILL.md) 保存到 Skill 目录下的 `task-file-inventory/SKILL.md`，然后在任务中这样提问：
+将三个 Skill 放进助手的同一个 Skill 目录：
+
+| Skill | 仓库来源 | 安装位置 |
+| --- | --- | --- |
+| 任务文件清单 | 根目录 [SKILL.md](./SKILL.md) | `task-file-inventory/SKILL.md` |
+| 整理 | 整个 [task-file-organizer](./task-file-organizer) 目录 | `task-file-organizer/` |
+| 垃圾桶 | 整个 [trash-bin](./trash-bin) 目录 | `trash-bin/` |
+
+整理负责文件归位和保留判断，垃圾桶负责经授权的可恢复搬移和恢复，任务文件清单负责汇总处理量和剩余量。垃圾桶附带的命令行脚本适用于 Windows，目录指纹工具需要 Python。
+
+安装后可以这样提问：
 
 > 盘点这次任务的文件，按五类汇总数量、大小和保留状态。
 
